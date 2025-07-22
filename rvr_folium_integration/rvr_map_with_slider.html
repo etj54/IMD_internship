@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_47e5af5623457c4842d37a60b5ce0cc5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iso8601-js-period@0.2.1/iso8601.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-timedimension@1.1.1/dist/leaflet.timedimension.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-timedimension@1.1.1/dist/leaflet.timedimension.control.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_47e5af5623457c4842d37a60b5ce0cc5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_47e5af5623457c4842d37a60b5ce0cc5 = L.map(
+                "map_47e5af5623457c4842d37a60b5ce0cc5",
+                {
+                    center: [28.556, 77.095],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cc32e9b860b268694998998c4b6dc06b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_cc32e9b860b268694998998c4b6dc06b.addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+            var marker_829b2e4bd6710a204069f5a57e0e9df0 = L.marker(
+                [28.546269726812046, 77.07209263473048],
+                {
+}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+            var icon_93be68cb241e13665eb090cf75c1d699 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db5ea03463aaa91b161b50fa3d485d2e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_80924eac871cd72a5527e0eaf860c3ed = $(`<div id="html_80924eac871cd72a5527e0eaf860c3ed" style="width: 100.0%; height: 100.0%;"><b>Runway 11 Beginning</b><br>Heading: 103.0°<br>Length: 4430m</div>`)[0];
+                popup_db5ea03463aaa91b161b50fa3d485d2e.setContent(html_80924eac871cd72a5527e0eaf860c3ed);
+            
+        
+
+        marker_829b2e4bd6710a204069f5a57e0e9df0.bindPopup(popup_db5ea03463aaa91b161b50fa3d485d2e)
+        ;
+
+        
+    
+    
+            marker_829b2e4bd6710a204069f5a57e0e9df0.bindTooltip(
+                `<div>
+                     RWY 11 BEG
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_829b2e4bd6710a204069f5a57e0e9df0.setIcon(icon_93be68cb241e13665eb090cf75c1d699);
+            
+    
+            var marker_6c340912ed84188f9bac8fa8172fd35b = L.marker(
+                [28.538300748490773, 77.1068818248323],
+                {
+}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+            var icon_bcc64fe1eb9ff8f4c3fe3b4ec33726bd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8899db2d53272cc24aa25346678fc3a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a3556178b841992403409aefaa25b6fa = $(`<div id="html_a3556178b841992403409aefaa25b6fa" style="width: 100.0%; height: 100.0%;"><b>Runway 29 Beginning</b><br>Heading: 283.0°<br>Length: 4430m</div>`)[0];
+                popup_8899db2d53272cc24aa25346678fc3a5.setContent(html_a3556178b841992403409aefaa25b6fa);
+            
+        
+
+        marker_6c340912ed84188f9bac8fa8172fd35b.bindPopup(popup_8899db2d53272cc24aa25346678fc3a5)
+        ;
+
+        
+    
+    
+            marker_6c340912ed84188f9bac8fa8172fd35b.bindTooltip(
+                `<div>
+                     RWY 29 BEG
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6c340912ed84188f9bac8fa8172fd35b.setIcon(icon_bcc64fe1eb9ff8f4c3fe3b4ec33726bd);
+            
+    
+            var marker_886b03bdb09828bcf8feb34afec7488a = L.marker(
+                [28.567182331326887, 77.08498547442058],
+                {
+}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+            var icon_b9dedf3737641c28740bb2ca921e2810 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e2d502956ae11cbdf8fa9401f677f426 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6dfaf6e1b66ed01b51a87d8ad06284e0 = $(`<div id="html_6dfaf6e1b66ed01b51a87d8ad06284e0" style="width: 100.0%; height: 100.0%;"><b>Runway 10 Beginning</b><br>Heading: 104.4°<br>Length: 3813m</div>`)[0];
+                popup_e2d502956ae11cbdf8fa9401f677f426.setContent(html_6dfaf6e1b66ed01b51a87d8ad06284e0);
+            
+        
+
+        marker_886b03bdb09828bcf8feb34afec7488a.bindPopup(popup_e2d502956ae11cbdf8fa9401f677f426)
+        ;
+
+        
+    
+    
+            marker_886b03bdb09828bcf8feb34afec7488a.bindTooltip(
+                `<div>
+                     RWY 10 BEG
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_886b03bdb09828bcf8feb34afec7488a.setIcon(icon_b9dedf3737641c28740bb2ca921e2810);
+            
+    
+            var marker_c97a3fb7744605ed5257a7e25f594a55 = L.marker(
+                [28.558606400571975, 77.12240587666396],
+                {
+}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+            var icon_29a3544a710ee82ab0883885d5dbb41a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f15df628b6fcf3982907db35c3ae467f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e1aebf9b553495b307d63ffc2cc4e3ce = $(`<div id="html_e1aebf9b553495b307d63ffc2cc4e3ce" style="width: 100.0%; height: 100.0%;"><b>Runway 28 Beginning</b><br>Heading: 284.4°<br>Length: 3813m</div>`)[0];
+                popup_f15df628b6fcf3982907db35c3ae467f.setContent(html_e1aebf9b553495b307d63ffc2cc4e3ce);
+            
+        
+
+        marker_c97a3fb7744605ed5257a7e25f594a55.bindPopup(popup_f15df628b6fcf3982907db35c3ae467f)
+        ;
+
+        
+    
+    
+            marker_c97a3fb7744605ed5257a7e25f594a55.bindTooltip(
+                `<div>
+                     RWY 28 BEG
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c97a3fb7744605ed5257a7e25f594a55.setIcon(icon_29a3544a710ee82ab0883885d5dbb41a);
+            
+    
+            var marker_ef4614c7e5b97222942fd1aa16f8c991 = L.marker(
+                [28.570559706309265, 77.08822392522595],
+                {
+}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+            var icon_eaa2cec495662201cbae29b8c16a4ad5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a38f8b3c244161847a79d6995937a06a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_16ecfe063a9a01db7fe26c78e37f06e9 = $(`<div id="html_16ecfe063a9a01db7fe26c78e37f06e9" style="width: 100.0%; height: 100.0%;"><b>Runway 09 Beginning</b><br>Heading: 91.4°<br>Length: 2816m</div>`)[0];
+                popup_a38f8b3c244161847a79d6995937a06a.setContent(html_16ecfe063a9a01db7fe26c78e37f06e9);
+            
+        
+
+        marker_ef4614c7e5b97222942fd1aa16f8c991.bindPopup(popup_a38f8b3c244161847a79d6995937a06a)
+        ;
+
+        
+    
+    
+            marker_ef4614c7e5b97222942fd1aa16f8c991.bindTooltip(
+                `<div>
+                     RWY 09 BEG
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ef4614c7e5b97222942fd1aa16f8c991.setIcon(icon_eaa2cec495662201cbae29b8c16a4ad5);
+            
+    
+            var marker_f26c2c9a8f9f7a70e7d9047c20e34d61 = L.marker(
+                [28.569910389750675, 77.11687357828113],
+                {
+}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+            var icon_326c2d0dd6df91556ca06e08fdcf6b0a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f81678ea8ea04b91028216e7315ba82 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c318a64d7e9a1a3269a0278200de1e54 = $(`<div id="html_c318a64d7e9a1a3269a0278200de1e54" style="width: 100.0%; height: 100.0%;"><b>Runway 27 Beginning</b><br>Heading: 271.4°<br>Length: 2816m</div>`)[0];
+                popup_1f81678ea8ea04b91028216e7315ba82.setContent(html_c318a64d7e9a1a3269a0278200de1e54);
+            
+        
+
+        marker_f26c2c9a8f9f7a70e7d9047c20e34d61.bindPopup(popup_1f81678ea8ea04b91028216e7315ba82)
+        ;
+
+        
+    
+    
+            marker_f26c2c9a8f9f7a70e7d9047c20e34d61.bindTooltip(
+                `<div>
+                     RWY 27 BEG
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f26c2c9a8f9f7a70e7d9047c20e34d61.setIcon(icon_326c2d0dd6df91556ca06e08fdcf6b0a);
+            
+    
+            L.Control.TimeDimensionCustom = L.Control.TimeDimension.extend({
+                _getDisplayDateFormat: function(date){
+                    var newdate = new moment(date);
+                    console.log(newdate)
+                    return newdate.format("YYYY-MM-DD HH:mm:ss");
+                }
+            });
+            map_47e5af5623457c4842d37a60b5ce0cc5.timeDimension = L.timeDimension(
+                {
+                    period: "PT10M",
+                }
+            );
+            var timeDimensionControl = new L.Control.TimeDimensionCustom(
+                {
+  "position": "bottomleft",
+  "minSpeed": 0.1,
+  "maxSpeed": 10,
+  "autoPlay": false,
+  "loopButton": true,
+  "timeSliderDragUpdate": true,
+  "speedSlider": true,
+  "playerOptions": {
+  "transitionTime": 200,
+  "loop": false,
+  "startOver": true,
+},
+}
+            );
+            map_47e5af5623457c4842d37a60b5ce0cc5.addControl(this.timeDimensionControl);
+
+            var geoJsonLayer = L.geoJson({"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Point", "coordinates": [77.07507960823997, 28.545660776295442]}, "properties": {"time": "2024-02-17 13:10:00", "zone": "RWY_11_TDZ", "rvr_value": 1000.0, "status": "Good", "color": "green", "style": {"fillColor": "green", "color": "black", "weight": 2, "fillOpacity": 0.7, "radius": 12}, "popup_content": "\n                    <div style=\"min-width: 200px;\">\n                        <h4 style=\"margin: 5px 0; color: green;\">RWY_11_TDZ</h4>\n                        <p><strong>Predicted RVR:</strong> 1000m</p>\n                        <p><strong>Status:</strong> Good</p>\n                        <p><strong>Time:</strong> 2024-02-17 13:10:00</p>\n                    </div>\n                    "}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [77.09414564596058, 28.541772092632257]}, "properties": {"time": "2024-02-17 13:10:00", "zone": "RWY_11_MID", "rvr_value": 1000.0, "status": "Good", "color": "green", "style": {"fillColor": "green", "color": "black", "weight": 2, "fillOpacity": 0.7, "radius": 12}, "popup_content": "\n                    <div style=\"min-width: 200px;\">\n                        <h4 style=\"margin: 5px 0; color: green;\">RWY_11_MID</h4>\n                        <p><strong>Predicted RVR:</strong> 1000m</p>\n                        <p><strong>Status:</strong> Good</p>\n                        <p><strong>Time:</strong> 2024-02-17 13:10:00</p>\n                    </div>\n                    "}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [77.10389504175821, 28.538909633971244]}, "properties": {"time": "2024-02-17 13:10:00", "zone": "RWY_29_TDZ", "rvr_value": 1000.0, "status": "Good", "color": "green", "style": {"fillColor": "green", "color": "black", "weight": 2, "fillOpacity": 0.7, "radius": 12}, "popup_content": "\n                    <div style=\"min-width: 200px;\">\n                        <h4 style=\"margin: 5px 0; color: green;\">RWY_29_TDZ</h4>\n                        <p><strong>Predicted RVR:</strong> 1000m</p>\n                        <p><strong>Status:</strong> Good</p>\n                        <p><strong>Time:</strong> 2024-02-17 13:10:00</p>\n                    </div>\n                    "}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [77.08482860060407, 28.54279480361744]}, "properties": {"time": "2024-02-17 13:10:00", "zone": "RWY_29_MID", "rvr_value": 2807.8, "status": "Good", "color": "green", "style": {"fillColor": "green", "color": "black", "weight": 2, "fillOpacity": 0.7, "radius": 12}, "popup_content": "\n                    <div style=\"min-width: 200px;\">\n                        <h4 style=\"margin: 5px 0; color: green;\">RWY_29_MID</h4>\n                        <p><strong>Predicted RVR:</strong> 2808m</p>\n                        <p><strong>Status:</strong> Good</p>\n                        <p><strong>Time:</strong> 2024-02-17 13:10:00</p>\n                    </div>\n                    "}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [77.08795529293451, 28.56650912484412]}, "properties": {"time": "2024-02-17 13:10:00", "zone": "RWY_10_TDZ", "rvr_value": 3316.2, "status": "Good", "color": "green", "style": {"fillColor": "green", "color": "black", "weight": 2, "fillOpacity": 0.7, "radius": 12}, "popup_content": "\n                    <div style=\"min-width: 200px;\">\n                        <h4 style=\"margin: 5px 0; color: green;\">RWY_10_TDZ</h4>\n                        <p><strong>Predicted RVR:</strong> 3316m</p>\n                        <p><strong>Status:</strong> Good</p>\n                        <p><strong>Time:</strong> 2024-02-17 13:10:00</p>\n                    </div>\n                    "}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [77.1038580277998, 28.562902997342153]}, "properties": {"time": "2024-02-17 13:10:00", "zone": "RWY_10_MID", "rvr_value": 3316.2, "status": "Good", "color": "green", "style": {"fillColor": "green", "color": "black", "weight": 2, "fillOpacity": 0.7, "radius": 12}, "popup_content": "\n                    <div style=\"min-width: 200px;\">\n                        <h4 style=\"margin: 5px 0; color: green;\">RWY_10_MID</h4>\n                        <p><strong>Predicted RVR:</strong> 3316m</p>\n                        <p><strong>Status:</strong> Good</p>\n                        <p><strong>Time:</strong> 2024-02-17 13:10:00</p>\n                    </div>\n                    "}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [77.11943626108369, 28.559279542865152]}, "properties": {"time": "2024-02-17 13:10:00", "zone": "RWY_28_TDZ", "rvr_value": 912.7, "status": "Good", "color": "green", "style": {"fillColor": "green", "color": "black", "weight": 2, "fillOpacity": 0.7, "radius": 12}, "popup_content": "\n                    <div style=\"min-width: 200px;\">\n                        <h4 style=\"margin: 5px 0; color: green;\">RWY_28_TDZ</h4>\n                        <p><strong>Predicted RVR:</strong> 913m</p>\n                        <p><strong>Status:</strong> Good</p>\n                        <p><strong>Time:</strong> 2024-02-17 13:10:00</p>\n                    </div>\n                    "}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [77.10353332683175, 28.5628831132318]}, "properties": {"time": "2024-02-17 13:10:00", "zone": "RWY_28_MID", "rvr_value": 1000.0, "status": "Good", "color": "green", "style": {"fillColor": "green", "color": "black", "weight": 2, "fillOpacity": 0.7, "radius": 12}, "popup_content": "\n                    <div style=\"min-width: 200px;\">\n                        <h4 style=\"margin: 5px 0; color: green;\">RWY_28_MID</h4>\n                        <p><strong>Predicted RVR:</strong> 1000m</p>\n                        <p><strong>Status:</strong> Good</p>\n                        <p><strong>Time:</strong> 2024-02-17 13:10:00</p>\n                    </div>\n                    "}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [77.09128927258352, 28.570493536721578]}, "properties": {"time": "2024-02-17 13:10:00", "zone": "RWY_09_TDZ", "rvr_value": 1000.0, "status": "Good", "color": "green", "style": {"fillColor": "green", "color": "black", "weight": 2, "fillOpacity": 0.7, "radius": 12}, "popup_content": "\n                    <div style=\"min-width: 200px;\">\n                        <h4 style=\"margin: 5px 0; color: green;\">RWY_09_TDZ</h4>\n                        <p><strong>Predicted RVR:</strong> 1000m</p>\n                        <p><strong>Status:</strong> Good</p>\n                        <p><strong>Time:</strong> 2024-02-17 13:10:00</p>\n                    </div>\n                    "}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [77.10261058886596, 28.570248550291296]}, "properties": {"time": "2024-02-17 13:10:00", "zone": "RWY_09_MID", "rvr_value": 2790.5, "status": "Good", "color": "green", "style": {"fillColor": "green", "color": "black", "weight": 2, "fillOpacity": 0.7, "radius": 12}, "popup_content": "\n                    <div style=\"min-width: 200px;\">\n                        <h4 style=\"margin: 5px 0; color: green;\">RWY_09_MID</h4>\n                        <p><strong>Predicted RVR:</strong> 2790m</p>\n                        <p><strong>Status:</strong> Good</p>\n                        <p><strong>Time:</strong> 2024-02-17 13:10:00</p>\n                    </div>\n                    "}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [77.1138082459089, 28.569976490107198]}, "properties": {"time": "2024-02-17 13:10:00", "zone": "RWY_27_TDZ", "rvr_value": 1000.0, "status": "Good", "color": "green", "style": {"fillColor": "green", "color": "black", "weight": 2, "fillOpacity": 0.7, "radius": 12}, "popup_content": "\n                    <div style=\"min-width: 200px;\">\n                        <h4 style=\"margin: 5px 0; color: green;\">RWY_27_TDZ</h4>\n                        <p><strong>Predicted RVR:</strong> 1000m</p>\n                        <p><strong>Status:</strong> Good</p>\n                        <p><strong>Time:</strong> 2024-02-17 13:10:00</p>\n                    </div>\n                    "}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [77.10248691852186, 28.57022002067791]}, "properties": {"time": "2024-02-17 13:10:00", "zone": "RWY_27_MID", "rvr_value": 1000.0, "status": "Good", "color": "green", "style": {"fillColor": "green", "color": "black", "weight": 2, "fillOpacity": 0.7, "radius": 12}, "popup_content": "\n                    <div style=\"min-width: 200px;\">\n                        <h4 style=\"margin: 5px 0; color: green;\">RWY_27_MID</h4>\n                        <p><strong>Predicted RVR:</strong> 1000m</p>\n                        <p><strong>Status:</strong> Good</p>\n                        <p><strong>Time:</strong> 2024-02-17 13:10:00</p>\n                    </div>\n                    "}}]}, {
+                    pointToLayer: function (feature, latLng) {
+                        if (feature.properties.icon == 'marker') {
+                            if(feature.properties.iconstyle){
+                                return new L.Marker(latLng, {
+                                    icon: L.icon(feature.properties.iconstyle)});
+                            }
+                            //else
+                            return new L.Marker(latLng);
+                        }
+                        if (feature.properties.icon == 'circle') {
+                            if (feature.properties.iconstyle) {
+                                return new L.circleMarker(latLng, feature.properties.iconstyle)
+                                };
+                            //else
+                            return new L.circleMarker(latLng);
+                        }
+                        //else
+
+                        return new L.Marker(latLng);
+                    },
+                    style: function (feature) {
+                        return feature.properties.style;
+                    },
+                    onEachFeature: function(feature, layer) {
+                        if (feature.properties.popup) {
+                        layer.bindPopup(feature.properties.popup);
+                        }
+                        if (feature.properties.tooltip) {
+                        layer.bindTooltip(feature.properties.tooltip);
+                        }
+                    }
+                })
+
+            var timestamped_geo_json_fad1b8bf3f36a438c9ee3502eaf8d034 = L.timeDimension.layer.geoJson(
+                geoJsonLayer,
+                {
+                    updateTimeDimension: true,
+                    addlastPoint: true,
+                    duration: "PT5M",
+                }
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+            var circle_marker_846b1273626ff51c2bb85d7c70f69991 = L.circleMarker(
+                [28.545660776295442, 77.07507960823997],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+        var popup_aa98d44ad9038ed082556d6940543569 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_722653c9387852de3b4776f4cc77bf36 = $(`<div id="html_722653c9387852de3b4776f4cc77bf36" style="width: 100.0%; height: 100.0%;">         <div style='min-width: 200px;'>             <h4 style='margin: 5px 0; color: green;'>RWY_11_TDZ</h4>             <p><strong>Predicted RVR:</strong> 1000m</p>             <p><strong>Status:</strong> Good</p>             <p><strong>Time:</strong> 2024-02-17 13:10:00</p>         </div>         </div>`)[0];
+                popup_aa98d44ad9038ed082556d6940543569.setContent(html_722653c9387852de3b4776f4cc77bf36);
+            
+        
+
+        circle_marker_846b1273626ff51c2bb85d7c70f69991.bindPopup(popup_aa98d44ad9038ed082556d6940543569)
+        ;
+
+        
+    
+    
+            circle_marker_846b1273626ff51c2bb85d7c70f69991.bindTooltip(
+                `<div>
+                     RWY_11_TDZ: 1000m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2c57528223709d8ea28c7c1c497f976d = L.marker(
+                [28.54596077629544, 77.07537960823997],
+                {
+}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+            var div_icon_eba6e3d2734e6f674039d2c6c4404ce0 = L.divIcon({
+  "html": "\n        \u003cdiv style=\u0027background-color: white; padding: 4px 6px; border: 2px solid green; border-radius: 4px; font-size: 11px; font-weight: bold; color: black; text-align: center; min-width: 60px; box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\u0027\u003e\n            \u003cdiv style=\u0027font-size: 10px; color: #666;\u0027\u003e11 TDZ\u003c/div\u003e\n            \u003cdiv style=\u0027color: green; font-size: 12px;\u0027\u003e1000m\u003c/div\u003e\n        \u003c/div\u003e\n        ",
+  "className": "rvr-label",
+});
+        
+    
+                marker_2c57528223709d8ea28c7c1c497f976d.setIcon(div_icon_eba6e3d2734e6f674039d2c6c4404ce0);
+            
+    
+            var circle_marker_d7416af9e125003ccef5002efe004cb1 = L.circleMarker(
+                [28.541772092632257, 77.09414564596058],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+        var popup_7aff51169e01ebd913178e8b195e7539 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6b0249b5b8dc9cf320e5b9fae1286e88 = $(`<div id="html_6b0249b5b8dc9cf320e5b9fae1286e88" style="width: 100.0%; height: 100.0%;">         <div style='min-width: 200px;'>             <h4 style='margin: 5px 0; color: green;'>RWY_11_MID</h4>             <p><strong>Predicted RVR:</strong> 1000m</p>             <p><strong>Status:</strong> Good</p>             <p><strong>Time:</strong> 2024-02-17 13:10:00</p>         </div>         </div>`)[0];
+                popup_7aff51169e01ebd913178e8b195e7539.setContent(html_6b0249b5b8dc9cf320e5b9fae1286e88);
+            
+        
+
+        circle_marker_d7416af9e125003ccef5002efe004cb1.bindPopup(popup_7aff51169e01ebd913178e8b195e7539)
+        ;
+
+        
+    
+    
+            circle_marker_d7416af9e125003ccef5002efe004cb1.bindTooltip(
+                `<div>
+                     RWY_11_MID: 1000m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_24a9d11e96fa51b18405f433507117b3 = L.marker(
+                [28.542072092632257, 77.09444564596058],
+                {
+}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+            var div_icon_3643d6d82defe39061870f57096cf140 = L.divIcon({
+  "html": "\n        \u003cdiv style=\u0027background-color: white; padding: 4px 6px; border: 2px solid green; border-radius: 4px; font-size: 11px; font-weight: bold; color: black; text-align: center; min-width: 60px; box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\u0027\u003e\n            \u003cdiv style=\u0027font-size: 10px; color: #666;\u0027\u003e11 MID\u003c/div\u003e\n            \u003cdiv style=\u0027color: green; font-size: 12px;\u0027\u003e1000m\u003c/div\u003e\n        \u003c/div\u003e\n        ",
+  "className": "rvr-label",
+});
+        
+    
+                marker_24a9d11e96fa51b18405f433507117b3.setIcon(div_icon_3643d6d82defe39061870f57096cf140);
+            
+    
+            var circle_marker_1705785c0d0330a37e72cb6fd5d474a0 = L.circleMarker(
+                [28.538909633971244, 77.10389504175821],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+        var popup_9584c1ececc57ecb0154966176a37c0a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1bf66523249f56560b3be688f835b78e = $(`<div id="html_1bf66523249f56560b3be688f835b78e" style="width: 100.0%; height: 100.0%;">         <div style='min-width: 200px;'>             <h4 style='margin: 5px 0; color: green;'>RWY_29_TDZ</h4>             <p><strong>Predicted RVR:</strong> 1000m</p>             <p><strong>Status:</strong> Good</p>             <p><strong>Time:</strong> 2024-02-17 13:10:00</p>         </div>         </div>`)[0];
+                popup_9584c1ececc57ecb0154966176a37c0a.setContent(html_1bf66523249f56560b3be688f835b78e);
+            
+        
+
+        circle_marker_1705785c0d0330a37e72cb6fd5d474a0.bindPopup(popup_9584c1ececc57ecb0154966176a37c0a)
+        ;
+
+        
+    
+    
+            circle_marker_1705785c0d0330a37e72cb6fd5d474a0.bindTooltip(
+                `<div>
+                     RWY_29_TDZ: 1000m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cc76b1136115d25b363287e84c616fca = L.marker(
+                [28.539209633971243, 77.1041950417582],
+                {
+}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+            var div_icon_01ea2ebc895c6f983a1f49ec58253b93 = L.divIcon({
+  "html": "\n        \u003cdiv style=\u0027background-color: white; padding: 4px 6px; border: 2px solid green; border-radius: 4px; font-size: 11px; font-weight: bold; color: black; text-align: center; min-width: 60px; box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\u0027\u003e\n            \u003cdiv style=\u0027font-size: 10px; color: #666;\u0027\u003e29 TDZ\u003c/div\u003e\n            \u003cdiv style=\u0027color: green; font-size: 12px;\u0027\u003e1000m\u003c/div\u003e\n        \u003c/div\u003e\n        ",
+  "className": "rvr-label",
+});
+        
+    
+                marker_cc76b1136115d25b363287e84c616fca.setIcon(div_icon_01ea2ebc895c6f983a1f49ec58253b93);
+            
+    
+            var circle_marker_22d28913d1a1006aa91e499ec8bfa495 = L.circleMarker(
+                [28.54279480361744, 77.08482860060407],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+        var popup_4b30e13d46599182b51f5745a67446b0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_24ce3c9f81df66b162c3231359f1451f = $(`<div id="html_24ce3c9f81df66b162c3231359f1451f" style="width: 100.0%; height: 100.0%;">         <div style='min-width: 200px;'>             <h4 style='margin: 5px 0; color: green;'>RWY_29_MID</h4>             <p><strong>Predicted RVR:</strong> 2808m</p>             <p><strong>Status:</strong> Good</p>             <p><strong>Time:</strong> 2024-02-17 13:10:00</p>         </div>         </div>`)[0];
+                popup_4b30e13d46599182b51f5745a67446b0.setContent(html_24ce3c9f81df66b162c3231359f1451f);
+            
+        
+
+        circle_marker_22d28913d1a1006aa91e499ec8bfa495.bindPopup(popup_4b30e13d46599182b51f5745a67446b0)
+        ;
+
+        
+    
+    
+            circle_marker_22d28913d1a1006aa91e499ec8bfa495.bindTooltip(
+                `<div>
+                     RWY_29_MID: 2808m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0ed729d6f2b33e98a6a1ff453072a903 = L.marker(
+                [28.54309480361744, 77.08512860060407],
+                {
+}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+            var div_icon_aa932a60296ecce0de5d43ab8a9d390a = L.divIcon({
+  "html": "\n        \u003cdiv style=\u0027background-color: white; padding: 4px 6px; border: 2px solid green; border-radius: 4px; font-size: 11px; font-weight: bold; color: black; text-align: center; min-width: 60px; box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\u0027\u003e\n            \u003cdiv style=\u0027font-size: 10px; color: #666;\u0027\u003e29 MID\u003c/div\u003e\n            \u003cdiv style=\u0027color: green; font-size: 12px;\u0027\u003e2808m\u003c/div\u003e\n        \u003c/div\u003e\n        ",
+  "className": "rvr-label",
+});
+        
+    
+                marker_0ed729d6f2b33e98a6a1ff453072a903.setIcon(div_icon_aa932a60296ecce0de5d43ab8a9d390a);
+            
+    
+            var circle_marker_7885ab61dcdba58b9c9e24986b0bdf57 = L.circleMarker(
+                [28.56650912484412, 77.08795529293451],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+        var popup_8b9fcaf26cd96638d884ab0c2459f2a7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f59abbd5063eabab1e5c06c54885fe1a = $(`<div id="html_f59abbd5063eabab1e5c06c54885fe1a" style="width: 100.0%; height: 100.0%;">         <div style='min-width: 200px;'>             <h4 style='margin: 5px 0; color: green;'>RWY_10_TDZ</h4>             <p><strong>Predicted RVR:</strong> 3316m</p>             <p><strong>Status:</strong> Good</p>             <p><strong>Time:</strong> 2024-02-17 13:10:00</p>         </div>         </div>`)[0];
+                popup_8b9fcaf26cd96638d884ab0c2459f2a7.setContent(html_f59abbd5063eabab1e5c06c54885fe1a);
+            
+        
+
+        circle_marker_7885ab61dcdba58b9c9e24986b0bdf57.bindPopup(popup_8b9fcaf26cd96638d884ab0c2459f2a7)
+        ;
+
+        
+    
+    
+            circle_marker_7885ab61dcdba58b9c9e24986b0bdf57.bindTooltip(
+                `<div>
+                     RWY_10_TDZ: 3316m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2b75bbc5cabea400f16d64d7c150c358 = L.marker(
+                [28.56680912484412, 77.0882552929345],
+                {
+}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+            var div_icon_386142ed4da7fb74abd989651d9af23d = L.divIcon({
+  "html": "\n        \u003cdiv style=\u0027background-color: white; padding: 4px 6px; border: 2px solid green; border-radius: 4px; font-size: 11px; font-weight: bold; color: black; text-align: center; min-width: 60px; box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\u0027\u003e\n            \u003cdiv style=\u0027font-size: 10px; color: #666;\u0027\u003e10 TDZ\u003c/div\u003e\n            \u003cdiv style=\u0027color: green; font-size: 12px;\u0027\u003e3316m\u003c/div\u003e\n        \u003c/div\u003e\n        ",
+  "className": "rvr-label",
+});
+        
+    
+                marker_2b75bbc5cabea400f16d64d7c150c358.setIcon(div_icon_386142ed4da7fb74abd989651d9af23d);
+            
+    
+            var circle_marker_90e83031715b4fd84f72905283d02cc5 = L.circleMarker(
+                [28.562902997342153, 77.1038580277998],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+        var popup_9a4616a687f3a451498325c7b94309d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7f031242c322131b1962c554ff58fc12 = $(`<div id="html_7f031242c322131b1962c554ff58fc12" style="width: 100.0%; height: 100.0%;">         <div style='min-width: 200px;'>             <h4 style='margin: 5px 0; color: green;'>RWY_10_MID</h4>             <p><strong>Predicted RVR:</strong> 3316m</p>             <p><strong>Status:</strong> Good</p>             <p><strong>Time:</strong> 2024-02-17 13:10:00</p>         </div>         </div>`)[0];
+                popup_9a4616a687f3a451498325c7b94309d1.setContent(html_7f031242c322131b1962c554ff58fc12);
+            
+        
+
+        circle_marker_90e83031715b4fd84f72905283d02cc5.bindPopup(popup_9a4616a687f3a451498325c7b94309d1)
+        ;
+
+        
+    
+    
+            circle_marker_90e83031715b4fd84f72905283d02cc5.bindTooltip(
+                `<div>
+                     RWY_10_MID: 3316m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_99d3508f03074fa5787f9b6f21e1711e = L.marker(
+                [28.563202997342152, 77.1041580277998],
+                {
+}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+            var div_icon_54147f4845cbc579fb098bb722de3c89 = L.divIcon({
+  "html": "\n        \u003cdiv style=\u0027background-color: white; padding: 4px 6px; border: 2px solid green; border-radius: 4px; font-size: 11px; font-weight: bold; color: black; text-align: center; min-width: 60px; box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\u0027\u003e\n            \u003cdiv style=\u0027font-size: 10px; color: #666;\u0027\u003e10 MID\u003c/div\u003e\n            \u003cdiv style=\u0027color: green; font-size: 12px;\u0027\u003e3316m\u003c/div\u003e\n        \u003c/div\u003e\n        ",
+  "className": "rvr-label",
+});
+        
+    
+                marker_99d3508f03074fa5787f9b6f21e1711e.setIcon(div_icon_54147f4845cbc579fb098bb722de3c89);
+            
+    
+            var circle_marker_f3a550dea7e7d051cbe5cfb986274fad = L.circleMarker(
+                [28.559279542865152, 77.11943626108369],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+        var popup_1182490fd9f1697bb47ec2c8a8f02370 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ab2b0cdbfc8b91965488f3f8758ea520 = $(`<div id="html_ab2b0cdbfc8b91965488f3f8758ea520" style="width: 100.0%; height: 100.0%;">         <div style='min-width: 200px;'>             <h4 style='margin: 5px 0; color: green;'>RWY_28_TDZ</h4>             <p><strong>Predicted RVR:</strong> 913m</p>             <p><strong>Status:</strong> Good</p>             <p><strong>Time:</strong> 2024-02-17 13:10:00</p>         </div>         </div>`)[0];
+                popup_1182490fd9f1697bb47ec2c8a8f02370.setContent(html_ab2b0cdbfc8b91965488f3f8758ea520);
+            
+        
+
+        circle_marker_f3a550dea7e7d051cbe5cfb986274fad.bindPopup(popup_1182490fd9f1697bb47ec2c8a8f02370)
+        ;
+
+        
+    
+    
+            circle_marker_f3a550dea7e7d051cbe5cfb986274fad.bindTooltip(
+                `<div>
+                     RWY_28_TDZ: 913m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_03f1ebf934c8b3f9f22103597408346a = L.marker(
+                [28.55957954286515, 77.11973626108369],
+                {
+}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+            var div_icon_b2533a67e8b6ad867ac3238ba4f29250 = L.divIcon({
+  "html": "\n        \u003cdiv style=\u0027background-color: white; padding: 4px 6px; border: 2px solid green; border-radius: 4px; font-size: 11px; font-weight: bold; color: black; text-align: center; min-width: 60px; box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\u0027\u003e\n            \u003cdiv style=\u0027font-size: 10px; color: #666;\u0027\u003e28 TDZ\u003c/div\u003e\n            \u003cdiv style=\u0027color: green; font-size: 12px;\u0027\u003e913m\u003c/div\u003e\n        \u003c/div\u003e\n        ",
+  "className": "rvr-label",
+});
+        
+    
+                marker_03f1ebf934c8b3f9f22103597408346a.setIcon(div_icon_b2533a67e8b6ad867ac3238ba4f29250);
+            
+    
+            var circle_marker_a405760cb8f562bdb062109411e5f42f = L.circleMarker(
+                [28.5628831132318, 77.10353332683175],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+        var popup_2555ae9b959a892c996e9e6fd4f9ec62 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b1b965f81fe154fa2ca8f4a2ac22d2a6 = $(`<div id="html_b1b965f81fe154fa2ca8f4a2ac22d2a6" style="width: 100.0%; height: 100.0%;">         <div style='min-width: 200px;'>             <h4 style='margin: 5px 0; color: green;'>RWY_28_MID</h4>             <p><strong>Predicted RVR:</strong> 1000m</p>             <p><strong>Status:</strong> Good</p>             <p><strong>Time:</strong> 2024-02-17 13:10:00</p>         </div>         </div>`)[0];
+                popup_2555ae9b959a892c996e9e6fd4f9ec62.setContent(html_b1b965f81fe154fa2ca8f4a2ac22d2a6);
+            
+        
+
+        circle_marker_a405760cb8f562bdb062109411e5f42f.bindPopup(popup_2555ae9b959a892c996e9e6fd4f9ec62)
+        ;
+
+        
+    
+    
+            circle_marker_a405760cb8f562bdb062109411e5f42f.bindTooltip(
+                `<div>
+                     RWY_28_MID: 1000m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5760dbe4b6c408be3059cddb10e31a59 = L.marker(
+                [28.563183113231798, 77.10383332683175],
+                {
+}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+            var div_icon_26f16673ee93d59dd3d02554783f24e2 = L.divIcon({
+  "html": "\n        \u003cdiv style=\u0027background-color: white; padding: 4px 6px; border: 2px solid green; border-radius: 4px; font-size: 11px; font-weight: bold; color: black; text-align: center; min-width: 60px; box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\u0027\u003e\n            \u003cdiv style=\u0027font-size: 10px; color: #666;\u0027\u003e28 MID\u003c/div\u003e\n            \u003cdiv style=\u0027color: green; font-size: 12px;\u0027\u003e1000m\u003c/div\u003e\n        \u003c/div\u003e\n        ",
+  "className": "rvr-label",
+});
+        
+    
+                marker_5760dbe4b6c408be3059cddb10e31a59.setIcon(div_icon_26f16673ee93d59dd3d02554783f24e2);
+            
+    
+            var circle_marker_163ec77df6f4607e76aa68c131e6788d = L.circleMarker(
+                [28.570493536721578, 77.09128927258352],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+        var popup_fc4b00b9bd3e07da0fd2ade4ef3d6a8f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8d46b14e345a28021274723eeba9c043 = $(`<div id="html_8d46b14e345a28021274723eeba9c043" style="width: 100.0%; height: 100.0%;">         <div style='min-width: 200px;'>             <h4 style='margin: 5px 0; color: green;'>RWY_09_TDZ</h4>             <p><strong>Predicted RVR:</strong> 1000m</p>             <p><strong>Status:</strong> Good</p>             <p><strong>Time:</strong> 2024-02-17 13:10:00</p>         </div>         </div>`)[0];
+                popup_fc4b00b9bd3e07da0fd2ade4ef3d6a8f.setContent(html_8d46b14e345a28021274723eeba9c043);
+            
+        
+
+        circle_marker_163ec77df6f4607e76aa68c131e6788d.bindPopup(popup_fc4b00b9bd3e07da0fd2ade4ef3d6a8f)
+        ;
+
+        
+    
+    
+            circle_marker_163ec77df6f4607e76aa68c131e6788d.bindTooltip(
+                `<div>
+                     RWY_09_TDZ: 1000m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f022e68066061646b8f7c5a92d06ad47 = L.marker(
+                [28.570793536721578, 77.09158927258352],
+                {
+}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+            var div_icon_3d626176d351022bfa364e78453e7d62 = L.divIcon({
+  "html": "\n        \u003cdiv style=\u0027background-color: white; padding: 4px 6px; border: 2px solid green; border-radius: 4px; font-size: 11px; font-weight: bold; color: black; text-align: center; min-width: 60px; box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\u0027\u003e\n            \u003cdiv style=\u0027font-size: 10px; color: #666;\u0027\u003e09 TDZ\u003c/div\u003e\n            \u003cdiv style=\u0027color: green; font-size: 12px;\u0027\u003e1000m\u003c/div\u003e\n        \u003c/div\u003e\n        ",
+  "className": "rvr-label",
+});
+        
+    
+                marker_f022e68066061646b8f7c5a92d06ad47.setIcon(div_icon_3d626176d351022bfa364e78453e7d62);
+            
+    
+            var circle_marker_6e55b57fe70eeaa94517dffd937eb0f7 = L.circleMarker(
+                [28.570248550291296, 77.10261058886596],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+        var popup_51ffb8bcd9c840273dc0237516ffd3fb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6b1bf1879059939bd3ce6bbd29aad7ab = $(`<div id="html_6b1bf1879059939bd3ce6bbd29aad7ab" style="width: 100.0%; height: 100.0%;">         <div style='min-width: 200px;'>             <h4 style='margin: 5px 0; color: green;'>RWY_09_MID</h4>             <p><strong>Predicted RVR:</strong> 2790m</p>             <p><strong>Status:</strong> Good</p>             <p><strong>Time:</strong> 2024-02-17 13:10:00</p>         </div>         </div>`)[0];
+                popup_51ffb8bcd9c840273dc0237516ffd3fb.setContent(html_6b1bf1879059939bd3ce6bbd29aad7ab);
+            
+        
+
+        circle_marker_6e55b57fe70eeaa94517dffd937eb0f7.bindPopup(popup_51ffb8bcd9c840273dc0237516ffd3fb)
+        ;
+
+        
+    
+    
+            circle_marker_6e55b57fe70eeaa94517dffd937eb0f7.bindTooltip(
+                `<div>
+                     RWY_09_MID: 2790m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_aa4923691f1c27983abffbad191c3dbd = L.marker(
+                [28.570548550291296, 77.10291058886595],
+                {
+}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+            var div_icon_c5db47e47a1804a20abe30e586558c49 = L.divIcon({
+  "html": "\n        \u003cdiv style=\u0027background-color: white; padding: 4px 6px; border: 2px solid green; border-radius: 4px; font-size: 11px; font-weight: bold; color: black; text-align: center; min-width: 60px; box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\u0027\u003e\n            \u003cdiv style=\u0027font-size: 10px; color: #666;\u0027\u003e09 MID\u003c/div\u003e\n            \u003cdiv style=\u0027color: green; font-size: 12px;\u0027\u003e2790m\u003c/div\u003e\n        \u003c/div\u003e\n        ",
+  "className": "rvr-label",
+});
+        
+    
+                marker_aa4923691f1c27983abffbad191c3dbd.setIcon(div_icon_c5db47e47a1804a20abe30e586558c49);
+            
+    
+            var circle_marker_e1e3524719f0b0862de5abd49cd23637 = L.circleMarker(
+                [28.569976490107198, 77.1138082459089],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+        var popup_4bfb63a53b5b3e492a45c8ffe0647a7d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3c1ce59caa64d0cbcb95d171484fca75 = $(`<div id="html_3c1ce59caa64d0cbcb95d171484fca75" style="width: 100.0%; height: 100.0%;">         <div style='min-width: 200px;'>             <h4 style='margin: 5px 0; color: green;'>RWY_27_TDZ</h4>             <p><strong>Predicted RVR:</strong> 1000m</p>             <p><strong>Status:</strong> Good</p>             <p><strong>Time:</strong> 2024-02-17 13:10:00</p>         </div>         </div>`)[0];
+                popup_4bfb63a53b5b3e492a45c8ffe0647a7d.setContent(html_3c1ce59caa64d0cbcb95d171484fca75);
+            
+        
+
+        circle_marker_e1e3524719f0b0862de5abd49cd23637.bindPopup(popup_4bfb63a53b5b3e492a45c8ffe0647a7d)
+        ;
+
+        
+    
+    
+            circle_marker_e1e3524719f0b0862de5abd49cd23637.bindTooltip(
+                `<div>
+                     RWY_27_TDZ: 1000m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0fc9a199e0276ab03f420206099f1d7c = L.marker(
+                [28.570276490107197, 77.1141082459089],
+                {
+}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+            var div_icon_eceefca561d32d05f0b5e311a9bc38a7 = L.divIcon({
+  "html": "\n        \u003cdiv style=\u0027background-color: white; padding: 4px 6px; border: 2px solid green; border-radius: 4px; font-size: 11px; font-weight: bold; color: black; text-align: center; min-width: 60px; box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\u0027\u003e\n            \u003cdiv style=\u0027font-size: 10px; color: #666;\u0027\u003e27 TDZ\u003c/div\u003e\n            \u003cdiv style=\u0027color: green; font-size: 12px;\u0027\u003e1000m\u003c/div\u003e\n        \u003c/div\u003e\n        ",
+  "className": "rvr-label",
+});
+        
+    
+                marker_0fc9a199e0276ab03f420206099f1d7c.setIcon(div_icon_eceefca561d32d05f0b5e311a9bc38a7);
+            
+    
+            var circle_marker_d87c93fe29cf7ed6ad563d845d376205 = L.circleMarker(
+                [28.57022002067791, 77.10248691852186],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+        var popup_046c733a2085d42be8a8ae3e38250243 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_02e9ec723c21fb13721bfca8a82d7d06 = $(`<div id="html_02e9ec723c21fb13721bfca8a82d7d06" style="width: 100.0%; height: 100.0%;">         <div style='min-width: 200px;'>             <h4 style='margin: 5px 0; color: green;'>RWY_27_MID</h4>             <p><strong>Predicted RVR:</strong> 1000m</p>             <p><strong>Status:</strong> Good</p>             <p><strong>Time:</strong> 2024-02-17 13:10:00</p>         </div>         </div>`)[0];
+                popup_046c733a2085d42be8a8ae3e38250243.setContent(html_02e9ec723c21fb13721bfca8a82d7d06);
+            
+        
+
+        circle_marker_d87c93fe29cf7ed6ad563d845d376205.bindPopup(popup_046c733a2085d42be8a8ae3e38250243)
+        ;
+
+        
+    
+    
+            circle_marker_d87c93fe29cf7ed6ad563d845d376205.bindTooltip(
+                `<div>
+                     RWY_27_MID: 1000m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a79f923ead1b3516921d20a3327e4bbf = L.marker(
+                [28.570520020677908, 77.10278691852186],
+                {
+}
+            ).addTo(map_47e5af5623457c4842d37a60b5ce0cc5);
+        
+    
+            var div_icon_e4f0442abc0bc6cfdd9c980b4243fe1a = L.divIcon({
+  "html": "\n        \u003cdiv style=\u0027background-color: white; padding: 4px 6px; border: 2px solid green; border-radius: 4px; font-size: 11px; font-weight: bold; color: black; text-align: center; min-width: 60px; box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\u0027\u003e\n            \u003cdiv style=\u0027font-size: 10px; color: #666;\u0027\u003e27 MID\u003c/div\u003e\n            \u003cdiv style=\u0027color: green; font-size: 12px;\u0027\u003e1000m\u003c/div\u003e\n        \u003c/div\u003e\n        ",
+  "className": "rvr-label",
+});
+        
+    
+                marker_a79f923ead1b3516921d20a3327e4bbf.setIcon(div_icon_e4f0442abc0bc6cfdd9c980b4243fe1a);
+            
+</script>
+</html>
